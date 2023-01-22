@@ -6,61 +6,61 @@ int i;
 char b[9]={'1','2','3','4','5','6','7','8','9'};
 void board()
 {
-	 	clrscr();
-	 	printf("\n _____ _____ _____ ");
-	 printf("\n|     |     |     |");
-	 printf("\n|  %c  |  %c  |  %c  |", b[0], b[1], b[2]);
-	 printf("\n|_____|_____|_____|");
-	 printf("\n|     |     |     |");
-	printf("\n|  %c  |  %c  |  %c  |", b[3], b[4], b[5]);
-	printf("\n|_____|_____|_____|");
-	printf("\n|     |     |     |");
-	printf("\n|  %c  |  %c  |  %c  |", b[6], b[7], b[8]); 
-		printf("\n|_____|_____|_____|");
+clrscr();
+printf("\n _____ _____ _____ ");
+printf("\n|     |     |     |");
+printf("\n|  %c  |  %c  |  %c  |", b[0], b[1], b[2]);
+printf("\n|_____|_____|_____|");
+printf("\n|     |     |     |");
+printf("\n|  %c  |  %c  |  %c  |", b[3], b[4], b[5]);
+printf("\n|_____|_____|_____|");
+printf("\n|     |     |     |");
+printf("\n|  %c  |  %c  |  %c  |", b[6], b[7], b[8]); 
+printf("\n|_____|_____|_____|");
 	
 }
 int win(int p)
 {
 	
-	if(b[0]==b[1]&&b[2]==b[1])
+if(b[0]==b[1]&&b[2]==b[1])
 	{
 		printf("\n%d win",p);
 		i=9;
 	}
-	else if(b[3]==b[4]&&b[4]==b[5])
-{
+else if(b[3]==b[4]&&b[4]==b[5])
+        {
 		printf("\n %d win",p);
 		i=9;
-}
+        }
 else if	(b[7]==b[6]&&b[6]==b[8])
-{
- printf("\n%d win",p);
- i=9;
-}
-	else if(b[0]==b[4]&&b[4]==b[8])
+        {
+                printf("\n%d win",p);
+                i=9;
+        }
+else if(b[0]==b[4]&&b[4]==b[8])
 	{
 	printf("\n%d win",p);
 	i=9;
 	}
-	else if(b[2]==b[4]&&b[2]==b[6])
-{	
+else if(b[2]==b[4]&&b[2]==b[6])
+        {	
 	printf("\n%d win",p);
 	i=9;
-}
-	else if(b[2]==b[5]&&b[2]==b[8])
-{
-		printf("\n%d win",p);
-		i=9;
-}
-	else if(b[4]==b[1]&&b[1]==b[7])
-{
-		printf("\n%d win",p);
-		i=9;
-}
+        }
+else if(b[2]==b[5]&&b[2]==b[8])
+        {
+	printf("\n%d win",p);
+	i=9;
+        }
+else if(b[4]==b[1]&&b[1]==b[7])
+        {
+	printf("\n%d win",p);
+	i=9;
+         }
 	
-	else if(b[0]==b[3]&&b[3]==b[6])
+else if(b[0]==b[3]&&b[3]==b[6])
 	{
-		printf("\n%d win",p);
+	printf("\n%d win",p);
 	i=9;
 	}
 }
